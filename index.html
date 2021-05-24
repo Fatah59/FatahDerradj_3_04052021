@@ -8,7 +8,7 @@
     <meta name="description" content="Projet-3, Dynamisez une page web avec des animations CSS">
     <title>OhMyFood</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="">
 </head>
 
@@ -17,7 +17,11 @@
 
         <!--header-->
         <header>
-            <img src="./Images/logo/ohmyfood.png" alt="Logo Oh my food">
+            <div class="header">
+                <a href="index.html">
+                    <h1 class="header_logo">ohmyfood</h1>
+                </a>
+            </div>
         </header>
 
         <!--section 1 : localisation-->
@@ -25,7 +29,7 @@
         <section class="location">
 
             <div class="location_icon">
-                <i class="fas fa-map-maker-alt"></i>
+                <i class="fas fa-map-marker-alt"></i>
 
             </div>
 
@@ -50,7 +54,7 @@
         <!--section 3 : Fonctionnement-->
         <section class="operation">
             <div class="operation_container">
-                <h2 class="operation_title"></h2>
+                <h2 class="operation_title">Fonctionnement</h2>
                 <div class="operation_steps">
                     <div class="operation_step">
                         <div class="operation_number">1</div>
@@ -79,7 +83,7 @@
             </div>
         </section>
 
-        <!--Restaurants-->
+        <!--section 4 : Restaurants-->
         <section class="restaurants">
             <h2 class="restaurants_title">Restaurants</h2>
 
@@ -88,7 +92,7 @@
                 <a href="pages_menu/la-palette-du-gout.html">
                 <div class="restaurant_card">
                     <div class="restaurant_card-image">
-                        <div class="restaurant_car-new">
+                        <div class="restaurant_card-new">
                             <p>Nouveau</p>
                         </div>
                         <img src="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
@@ -98,8 +102,11 @@
                             <div class="restaurant_block-name">La palette du goût</div>
                             <div class="restaurant_block-city">Ménilmontant</div>
                         </div>
-                        <div class="restaurant_block-hearth">
-
+                        <div class="restaurant_block-heart">
+                            <div class="restaurant_block-heart-animation">
+                                <i class="fa fa-heart animation-heart"></i>
+                            </div>
+                            <i class="far fa-heart animation-heart-background"></i>
                         </div>
                     </div>
                 </div>
@@ -108,7 +115,7 @@
                 <a href="pages_menu/la-note-enchantee.html">
                     <div class="restaurant_card">
                         <div class="restaurant_card-image">
-                            <div class="restaurant_car-new">
+                            <div class="restaurant_card-new">
                                 <p>Nouveau</p>
                             </div>
                             <img src="Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
@@ -118,8 +125,11 @@
                                 <div class="restaurant_block-name">La note enchantée</div>
                                 <div class="restaurant_block-city">Charonne</div>
                             </div>
-                            <div class="restaurant_block-hearth">
-    
+                            <div class="restaurant_block-heart">
+                                <div class="restaurant_block-heart-animation">
+                                    <i class="fa fa-heart animation-heart"></i>
+                                </div>
+                                <i class="far fa-heart animation-heart-background"></i>
                             </div>
                         </div>
                     </div>
@@ -128,7 +138,7 @@
                     <a href="pages_menu/a-la-fancaise.html">
                         <div class="restaurant_card">
                             <div class="restaurant_card-image">
-                                <div class="restaurant_car-new">
+                                <div class="restaurant_card-new">
                                     <p>Nouveau</p>
                                 </div>
                                 <img src="Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
@@ -138,8 +148,11 @@
                                     <div class="restaurant_block-name">À la française</div>
                                     <div class="restaurant_block-city">Cité Rouge</div>
                                 </div>
-                                <div class="restaurant_block-hearth">
-        
+                                <div class="restaurant_block-heart">
+                                    <div class="restaurant_block-heart-animation">
+                                        <i class="fa fa-heart animation-heart"></i>
+                                    </div>
+                                    <i class="far fa-heart animation-heart-background"></i>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +161,7 @@
                         <a href="pages_menu/le-delice-des-sens.html">
                             <div class="restaurant_card">
                                 <div class="restaurant_card-image">
-                                    <div class="restaurant_car-new">
+                                    <div class="restaurant_card-new">
                                         <p>Nouveau</p>
                                     </div>
                                     <img src="Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
@@ -158,8 +171,11 @@
                                         <div class="restaurant_block-name">Le délice des sens</div>
                                         <div class="restaurant_block-city">Folie-Méricourt</div>
                                     </div>
-                                    <div class="restaurant_block-hearth">
-            
+                                    <div class="restaurant_block-heart">
+                                        <div class="restaurant_block-heart-animation">
+                                            <i class="fa fa-heart animation-heart"></i>
+                                        </div>
+                                        <i class="far fa-heart animation-heart-background"></i>
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +185,7 @@
         </section>
 
         <!--footer-->
-        <footer>
+        <footer class="footer">
 
             <div class="footer_container">
                 <div class="logo">
@@ -178,7 +194,7 @@
                 <div class="footer_container-links">
 
                     <div class="footer_container-link">
-                        <i class="fas fa-ustensils"></i>
+                        <i class="fas fa-utensils"></i>
                         <h3 class="footer_container-link_title">Proposer un restaurant</h3>
                     </div>
 
