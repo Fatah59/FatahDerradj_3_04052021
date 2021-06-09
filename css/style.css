@@ -20,13 +20,14 @@ body {
 }
 
 .loader {
+  z-index: 1;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   animation-name: loader;
   opacity: 0;
-  animation-duration: 10s;
+  animation: loader 4s 3200ms both;
   top: 0;
   left: 0;
   height: 100%;
@@ -35,8 +36,8 @@ body {
 }
 
 .progress {
-  height: 2vw;
-  width: 50vw;
+  height: 2%;
+  width: 50%;
   border: 2px solid #9356DC;
   padding: 0.25rem;
   margin-bottom: 30px;
@@ -47,7 +48,7 @@ body {
   background: #ff79da;
   transform-origin: left;
   transform: scaleX(0.5);
-  animation: progress-bar 1000ms 150ms both;
+  animation: progress-bar 3000ms 0ms both;
 }
 
 
@@ -192,10 +193,8 @@ body {
   margin: 0;
   background: #f6f6f6;
   padding: 20px;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -358,6 +357,7 @@ body {
   }
   100% {
     opacity: 0%;
+    visibility: hidden;
   }
 }
 
