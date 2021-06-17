@@ -1,0 +1,64 @@
+/* Media Queries */
+
+/* Index page */
+
+/* Section 3*/
+
+@media screen and (min-width: 900px)
+{
+    .operation_title {
+        padding: 20px;
+        margin: auto;
+    }
+    .operation_steps {
+        flex-direction: row;
+    }
+    .operation_step {
+        width: 33%;
+    }  
+}
+
+/* Section 4*/
+
+@media screen and (min-width: 900px)
+{
+    .restaurant_cards {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .restaurants_title {
+        padding: 20px;
+        margin: auto;
+    }
+} 
+
+/* footer */
+
+@media screen and (min-width: 900px) 
+{
+    .logo {
+        text-align: center;
+    }
+    .footer_container-links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+}
+
+/* Menu page */
+
+/* Menu */
+
+@media screen and (min-width: 900px)
+{
+    .menu_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+}
