@@ -168,36 +168,6 @@ header .header_logo a {
   align-items: center
 }
 
-.menu_grid_case:hover .validation_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: slide-left 0.5s ease;
-  transform-origin: right;
-}
-
-.menu_grid_case:hover .menu_case_price {
-  padding-right: 70px;
-  transition: 0.5s ease;
-}
-
-.menu_grid_case .validation_box {
-  display: none;
-  position: absolute;
-  background: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  right: 0px;
-  padding: 0 13px;
-  height: 100%;
-}
-
-.menu_grid_case .validation_box i {
-  font-size: 30px;
-  color: white;
-  transform: rotate(180deg);
-  animation: rotate 0.5s both;
-}
-
 .dish-and-price {
   width: 100%;
   display: flex;
@@ -303,74 +273,4 @@ header .header_logo a {
 .footer_container-link_title {
   font-size: 16px;
   font-weight: 400;
-}
-
-/* Animation */
-
-/* Menu */
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-  
-.appears-with-opacity {
-  animation: opacity 1s both;
-}
-  
-#case-1 {
-  animation-delay: 0.1s;
-}
-  
-#case-2 {
-    animation-delay: 0.2s;
-}
-  
-#case-3 {
-  animation-delay: 0.3s;
-}
-  
-#case-4 {
-  animation-delay: 0.4s;
-}
-  
-#case-5 {
-  animation-delay: 0.5s;
-}
-  
-#case-6 {
-  animation-delay: 0.6s;
-}
-  
-#case-7 {
-  animation-delay: 0.7s;
-}
-  
-#case-8 {
-  animation-delay: 0.8s;
-}
-
-#case-9 {
-  animation-delay: 0.9s;
-}
- /* Validation Box */
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
 }

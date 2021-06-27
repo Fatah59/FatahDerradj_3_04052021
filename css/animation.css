@@ -1,0 +1,176 @@
+/* Animation index page */
+
+/* Loader & progress bar */ 
+.loader {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: loader;
+    opacity: 0;
+    animation: loader 1s 2000ms both;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+.progress {
+    height: 2%;
+    width: 50%;
+    border: 2px solid #9356DC;
+    padding: 0.25rem;
+    margin-bottom: 30px;
+}
+  
+.progress__bar {
+    height: 100%;
+    background: #ff79da;
+    transform-origin: left;
+    transform: scaleX(0.5);
+    animation: progress-bar 2000ms 0ms both;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
+  
+@keyframes progress {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+  
+@keyframes progress-bar {
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        transform: scaleX(0.18);
+    }
+    24% {
+        transform: scaleX(0.4);
+        animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+    }
+    40% {
+        transform: scaleX(0.81);
+        animation-timing-function: cubic-bezier(0.25, 1, 0.25, 1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* Animation Menu page */
+
+/* Menu appears with opacity */
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+    
+.appears-with-opacity {
+    animation: opacity 1s both;
+}
+
+#case-1 {
+    animation-delay: 0.1s;
+}
+    
+#case-2 {
+    animation-delay: 0.2s;
+}
+    
+#case-3 {
+    animation-delay: 0.3s;
+}
+    
+#case-4 {
+    animation-delay: 0.4s;
+}
+    
+#case-5 {
+    animation-delay: 0.5s;
+}
+    
+#case-6 {
+    animation-delay: 0.6s;
+}
+    
+#case-7 {
+    animation-delay: 0.7s;
+}
+    
+#case-8 {
+    animation-delay: 0.8s;
+}
+  
+#case-9 {
+    animation-delay: 0.9s;
+}
+
+
+/* Validation box */
+.menu_grid_case:hover .validation_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-left 0.5s ease;
+    transform-origin: right;
+}
+  
+.menu_grid_case:hover .menu_case_price {
+    padding-right: 70px;
+    transition: 0.5s ease;
+}
+  
+.menu_grid_case .validation_box {
+    display: none;
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 13px;
+    height: 100%;
+}
+  
+.menu_grid_case .validation_box i {
+    font-size: 30px;
+    color: white;
+    transform: rotate(180deg);
+    animation: rotate 0.5s both;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+@keyframes slide-left {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+  
